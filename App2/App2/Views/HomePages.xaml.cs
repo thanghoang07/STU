@@ -22,14 +22,21 @@ namespace App2.Views
         private void Btn_OnClick(object sender, EventArgs args)
         {
             countClick++;
+            string name = edt1.Text;
+            string pass = edt2.Text;
             if (countClick <= 100)
             {
-                txtResult.Text = "ấn: " + countClick + " lần";
+                txtResult1.Text = "ấn: " + countClick + " lần";
+                txtResult2.Text = "name: " + name + " | pass: " + pass;
             }
             else
             {
-                txtResult.Text = "ấn quá: " + countClick + " lần";
+                txtResult1.Text = "ấn quá: " + countClick + " lần";
+                txtResult2.Text = "name: " + name + " | pass: " + pass;
             }
+            //
+            edt1.Text = string.Format("");
+            edt2.Text = string.Format("");
         }
     }
 }
