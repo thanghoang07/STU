@@ -19,17 +19,18 @@ namespace App2
             InitializeComponent();
         }
         //
-        private void Button_OnClick(object sender, EventArgs args)
+        private async void Button_OnClick(object sender, EventArgs args)
         {
-            countClick++;
-            if (countClick <= 100)
-            {
-                txtResult.Text = "ấn: " + countClick + " lần";
-            }
-            else
-            {
-                txtResult.Text = "ấn quá: " + countClick + " lần";
-            }
+            //countClick++;
+            //if (countClick <= 100)
+            //{
+            //    txtResult.Text = "ấn: " + countClick + " lần";
+            //}
+            //else
+            //{
+            //    txtResult.Text = "ấn quá: " + countClick + " lần";
+            //}
+            await Navigation.PushAsync(new Page2(MainEntry.Text));
         }
     }
 }

@@ -12,8 +12,16 @@ namespace App2
         public App()
         {
             InitializeComponent();
-
-            MainPage = new App2.HelloWorldPages1();
+            //MainPage = new NavigationPage(new App2.HelloWorldPages1());
+            MainPage = new TabbedPage
+            {
+                Children =
+                {
+                    new HelloWorldPages1(),
+                    new Page2(),
+                    new MainPage()
+                }
+            };
         }
 
         protected override void OnStart()
