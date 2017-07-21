@@ -13,7 +13,7 @@ namespace App2
         {
             InitializeComponent();
 
-            MainPage = new App2.MainPage();
+            MainPage = new App2.HelloWorldPages1();
         }
 
         protected override void OnStart()
