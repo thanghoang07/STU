@@ -13,18 +13,19 @@ namespace App2
         {
             InitializeComponent();
             //MainPage = new NavigationPage(new App2.HelloWorldPages1());
-            MainPage = new CarouselPage
-            {
-                //trang con
-                Children =
-                {
-                    new App2.Views.HomePages(),
-                    new App2.HelloWorldPages1(),
-                    new App2.Page2(),
-                    new App2.MainPage(),
-                    new App2.Views.DangNhapPage()
-                }
-            };
+            //MainPage = new CarouselPage
+            //{
+            //    //trang con
+            //    Children =
+            //    {
+            //        new App2.Views.HomePages(),
+            //        new App2.HelloWorldPages1(),
+            //        new App2.Page2(),
+            //        new App2.MainPage(),
+            //        new App2.Views.DangNhapPage()
+            //    }
+            //};
+            MainPage = new App2.Views.HomePages();
         }
 
         protected override void OnStart()

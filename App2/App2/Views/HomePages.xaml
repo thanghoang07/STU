@@ -1,16 +1,39 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="App2.Views.HomePages"
+             xmlns:local="clr-namespace:MSCommunity_Xamarin"
              Title="Trang chủ">
-    <ContentPage.Content>
-        <StackLayout Orientation="Vertical" BackgroundColor="White" Padding="12">
-            <Label x:Name="txtPage2" Text="Trang chủ" VerticalOptions="Center" HorizontalOptions="Center" FontSize="Large" TextColor="BlueViolet"/>
-            <Grid Padding="0,0,0,50">
-                <Button x:Name="btnClick" Text="Click" BackgroundColor="Chocolate" Clicked="Btn_OnClick"/>
-            </Grid>
-            <Label x:Name="txtResult1" Text="" VerticalOptions="Center" HorizontalOptions="Center" FontSize="Large" TextColor="BlueViolet"/>
-            <Label x:Name="txtResult2" Text="" VerticalOptions="Center" HorizontalOptions="Center" FontSize="Large" TextColor="BlueViolet"/>
-        </StackLayout>
-    </ContentPage.Content>
-</ContentPage>
+    <MasterDetailPage.Master>
+        <ContentPage Title="Menu" BackgroundColor="#e8e8e8">
+            <StackLayout Orientation="Vertical">
+                <StackLayout BackgroundColor="#e74c3c" HeightRequest="75">
+                    <Label Text="Menu" FontSize="20" VerticalOptions="CenterAndExpand" TextColor="White" HorizontalOptions="Center"/>
+                </StackLayout>
+
+                <ListView x:Name="navigationDrawerList" RowHeight="60" SeparatorVisibility="None" BackgroundColor="#e8e8e8" ItemSelected="OnMenuItemSelected">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <!-- Main design for our menu items -->
+                                <StackLayout VerticalOptions="FillAndExpand" Orientation="Horizontal" Padding="20,10,0,10" Spacing="20">
+                                    <Image Source="{Binding Icon}" WidthRequest="40" HeightRequest="40" VerticalOptions="Center" />
+
+                                    <Label Text="{Binding Title}" FontSize="Medium" VerticalOptions="Center" TextColor="Black"/>
+                                </StackLayout>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+
+            </StackLayout>
+        </ContentPage>
+    </MasterDetailPage.Master>
+
+    <MasterDetailPage.Detail>
+        <NavigationPage>
+
+        </NavigationPage>
+    </MasterDetailPage.Detail>
+
+</MasterDetailPage>
