@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App2.Views.DangNhapPage">
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical" BackgroundColor="White" Padding="12">
+            <Label x:Name="txtPage2" Text="Đăng nhập" VerticalOptions="Center" HorizontalOptions="Center" FontSize="Large" TextColor="BlueViolet"/>
+            <Entry x:Name="edt1" BackgroundColor="Gray" TextColor="White" Placeholder="Tài khoản" PlaceholderColor="White"/>
+            <Entry x:Name="edt2" BackgroundColor="Gray" TextColor="White" Placeholder="Mật khẩu" PlaceholderColor="White"/>
+            <Button x:Name="btnLogin" Text="Đăng nhập" BackgroundColor="Azure" Clicked="Btn_OnClick"/>
+            <Button x:Name="btnReg" Text="Đăng ký" BackgroundColor="Azure" Clicked="Btn_OnClick"/>
+            <Button x:Name="btnMPass" Text="Quên mật khẩu" BackgroundColor="Azure" Clicked="Btn_OnClick"/>
+            <Label x:Name="txtResult1" Text="" VerticalOptions="Center" HorizontalOptions="Center" FontSize="Large" TextColor="BlueViolet"/>
+            <Label x:Name="txtResult2" Text="" VerticalOptions="Center" HorizontalOptions="Center" FontSize="Large" TextColor="BlueViolet"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

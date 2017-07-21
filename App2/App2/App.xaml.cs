@@ -22,6 +22,7 @@ namespace App2
                     new App2.HelloWorldPages1(),
                     new App2.Page2(),
                     new App2.MainPage(),
+                    new App2.Views.DangNhapPage()
                 }
             };
         }

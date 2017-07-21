@@ -7,7 +7,7 @@
         <StackLayout Orientation="Vertical" BackgroundColor="White" Padding="12">
             <Entry x:Name="MainEntry" BackgroundColor="Gray" TextColor="White"/>
             <Grid Padding="0,0,0,50">
-                <Button Clicked="Button_OnClick" Text="Click"  VerticalOptions="Center" HorizontalOptions="Center"/>
+                <Button x:Name="btnClick" Clicked="Button_OnClick" Text="Click" />
             </Grid>
             <Label x:Name="txtResult" Text="Hello Xamarin.Forms!" VerticalOptions="Center" HorizontalOptions="Center"/>
         </StackLayout>

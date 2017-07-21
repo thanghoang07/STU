@@ -6,8 +6,6 @@
     <ContentPage.Content>
         <StackLayout Orientation="Vertical" BackgroundColor="White" Padding="12">
             <Label x:Name="txtPage2" Text="Trang chủ" VerticalOptions="Center" HorizontalOptions="Center" FontSize="Large" TextColor="BlueViolet"/>
-            <Entry x:Name="edt1" BackgroundColor="Gray" TextColor="White" Placeholder="Nhập tên" PlaceholderColor="White"/>
-            <Entry x:Name="edt2" BackgroundColor="Gray" TextColor="White" Placeholder="Nhập mật khẩu" PlaceholderColor="White"/>
             <Grid Padding="0,0,0,50">
                 <Button x:Name="btnClick" Text="Click" BackgroundColor="Chocolate" Clicked="Btn_OnClick"/>
             </Grid>
