@@ -13,7 +13,7 @@ namespace App2
         {
             InitializeComponent();
             //MainPage = new NavigationPage(new App2.HelloWorldPages1());
-            MainPage = new TabbedPage
+            MainPage = new CarouselPage
             {
                 Children =
                 {
