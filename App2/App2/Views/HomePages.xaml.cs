@@ -7,19 +7,19 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace App2
+namespace App2.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class HelloWorldPages1 : ContentPage
+    public partial class HomePages : ContentPage
     {
         int countClick = 0;
         //
-        public HelloWorldPages1()
+        public HomePages()
         {
             InitializeComponent();
         }
         //
-        private void Button_OnClick(object sender, EventArgs args)
+        private void Btn_OnClick(object sender, EventArgs args)
         {
             countClick++;
             if (countClick <= 100)

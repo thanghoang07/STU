@@ -12,6 +12,8 @@ namespace App2
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Page2 : ContentPage
     {
+        int countClick = 0;
+        //
         public Page2()
         {
             InitializeComponent();           
@@ -23,9 +25,17 @@ namespace App2
             txtPage2.Text = Param;
         }
         //
-        private async void Btn_Goback(object sender, EventArgs args)
+        private void Btn_Goback(object sender, EventArgs args)
         {
-            await Navigation.PopAsync();// go back
+            countClick++;
+            if (countClick <= 100)
+            {
+                txtResult.Text = "ấn: " + countClick + " lần";
+            }
+            else
+            {
+                txtResult.Text = "ấn quá: " + countClick + " lần";
+            }
         }
     }
 }

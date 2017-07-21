@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="App2.Page2"
-             Title="Page2">
+             x:Class="App2.Views.HomePages"
+             Title="Trang chủ">
     <ContentPage.Content>
         <StackLayout Orientation="Vertical" BackgroundColor="White" Padding="12">
-            <Label x:Name="txtPage2" Text="Welcome to Xamarin Forms!" VerticalOptions="Center" HorizontalOptions="Center" FontSize="Large" TextColor="BlueViolet"/>
+            <Label x:Name="txtPage2" Text="Trang chủ" VerticalOptions="Center" HorizontalOptions="Center" FontSize="Large" TextColor="BlueViolet"/>
             <Grid Padding="0,0,0,50">
-                <Button x:Name="btnBack" Text="Go back" BackgroundColor="Blue" Clicked="Btn_Goback"/>
+                <Button x:Name="btnClick" Text="Click" BackgroundColor="Chocolate" Clicked="Btn_OnClick"/>
             </Grid>
             <Label x:Name="txtResult" Text="" VerticalOptions="Center" HorizontalOptions="Center" FontSize="Large" TextColor="BlueViolet"/>
         </StackLayout>

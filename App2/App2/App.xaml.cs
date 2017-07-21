@@ -15,11 +15,13 @@ namespace App2
             //MainPage = new NavigationPage(new App2.HelloWorldPages1());
             MainPage = new CarouselPage
             {
+                //trang con
                 Children =
                 {
-                    new HelloWorldPages1(),
-                    new Page2(),
-                    new MainPage()
+                    new App2.Views.HomePages(),
+                    new App2.HelloWorldPages1(),
+                    new App2.Page2(),
+                    new App2.MainPage(),
                 }
             };
         }
