@@ -1,4 +1,4 @@
-STU - student manager 
+#STU - student manager 
 
   +Xamarin.forms
 
